@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab 1 - Part B</title>
+</head>
+<body>
+    <h1>Web Development: Lab Assignment 1 - Part B</h1>
+    <h2>SAIT Student Survey</h2>
+    <div>Please complete the following student survey</div>
+    <form action="mailto:bryan.meyer@edu.sait.ca" method="GET">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name">
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" name="email">
+        <label for="phone">Contact Number:</label>
+        <input type="tel" id="phone" name="phone" pattern="\d{3}[\-]\d{3}[\-]\d{4}" placeholder="403-123-4567">
+        <br>
+        <p>What did you enjoy the most about being on campus? Select all that apply:</p>
+        <label for="location">Campus Location</label>
+        <input type="checkbox" name="location" id="location"><br>
+        <label for="athletic">Athletic Centre</label>
+        <input type="checkbox" name="athletic" id="athletic"><br>
+        <label for="student">Student Centre</label>
+        <input type="checkbox" name="student" id="student"><br>
+        <label for="classes">Lab Classes</label>
+        <input type="checkbox" name="classes" id="classes"><br>
+        <label for="food">Food and Drinks</label>
+        <input type="checkbox" name="food" id="food"><br>
+        <label for="gateway">The Gateway</label>
+        <input type="checkbox" name="gateway" id="gateway"><br>
+        <br>
+        <p>How did you first become interested in SAIT?</p>
+        <label for="open_house">Open House</label>
+        <input type="radio" name="method" id="open_house" value="open_house">
+        <label for="advertising">Advertising</label>
+        <input type="radio" name="method" id="advertising" value="advertising">
+        <label for="counselling">School Counselling</label>
+        <input type="radio" name="method" id="counselling" value="counselling">
+        <label for="mouth">Word of Mouth</label>
+        <input type="radio" name="method" id="mouth" value="mouth">
+        <br><br>
+        <input type="submit" value="submit">
+        <input type="reset" value="reset">
+    </form>
+</body>
+</html>
